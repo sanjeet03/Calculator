@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    
+    <title>calculator</title>
+    <style>
+        h1{
+            color: black;
+            font-family: cursive;
+        }
+        body{
+            text-align: center;
+            background-color: lightpink;
+        }
+        
+    </style>
+    </head>
+    
+    <body>
+    <h1>CALCULATOR</h1>
+    <input id ="id1" type="number" placeholder="enter the first number">
+
+    <input id ="id2"type="number" placeholder="enter the second number">
+    <br>
+    <br>
+    <button onclick="add()" style="color: brown">+</button>
+    <button onclick="sub()"style="color: black">-</button>
+    <button onclick="prod()"style="color: brown">*</button>
+    <button onclick="div()"style="color:black">/</button>
+    <br>
+    <br>
+    <input id ="id3" disabled type="number" placeholder = "Result" style="color: red;font-size: 25px;font-family: cursive">
+    <script>
+        
+        function add()
+        {
+        var a =document.getElementById("id1").value;
+        var b=document.getElementById("id2").value;
+        var z= Number(a) + Number(b);
+        document.getElementById("id3").value = z;
+        }
+        
+        function sub() 
+        {
+        var a =parseInt(document.getElementById("id1").value);
+        var b=parseInt(document.getElementById("id2").value);
+        z=a-b;
+        document.getElementById("id3").value = z;
+        }
+        function prod()
+        {
+        var a =parseInt(document.getElementById("id1").value);
+        var b=parseInt(document.getElementById("id2").value);
+        z=a*b;
+        document.getElementById("id3").value;
+        }
+        function div()
+        {
+        var a =parseInt(document.getElementById("id1").value);
+        var b=parseInt(document.getElementById("id2").value);
+        z=a/b;
+        document.getElementById("id3").value = z;
+        }
+    </script>
+    
+    </body></html>
